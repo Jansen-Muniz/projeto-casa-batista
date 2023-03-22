@@ -1,0 +1,64 @@
+:root{
+  --color1: #B6F2BC;
+  --color2: #62D96D;
+  --color3: #4FB059;
+  --color4: #46994F;
+  --color5: #2E6634;
+}
+
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+html, body{
+  background-color: var(--color1);
+}
+
+header{
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: space-around;
+  padding: 2rem;
+  background-image: linear-gradient(var(--color5), var(--color1));
+  box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.267);
+}
+
+header .header-text-container{
+  position: relative;
+  left: -12rem;
+  color: white;
+  font-size: 1.5rem;
+  text-shadow: 1px 1px 5px black;
+}
+
+.header-text-container div{
+  padding: 1rem;
+}
+
+nav{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 2rem;
+}
+
+nav li{
+  list-style-type: none;
+}
+
+nav li a{
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: var(--color5);
+}
+
+a:hover{
+  background-color: var(--color5);
+  border-radius: 1rem;
+  padding: 1rem;
+  color: white;
+  box-shadow: 0px 1px 5px 1px rgba(0, 0, 0, 0.5);
+}
