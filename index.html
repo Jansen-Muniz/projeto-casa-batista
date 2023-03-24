@@ -4,13 +4,14 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
   <link rel="stylesheet" href="./style/style.css">
   <title>Casa Batista da Criança | Santa Cruz do Piauí</title>
 </head>
 <body>
   <div class="container">
     <header>
-      <div class="header-text-container">
+      <div class="container-texto-cabecalho">
         <div>
           <h1>Casa Batista da Criança</h1>
         </div>
@@ -19,17 +20,17 @@
         </div>
       </div>
       <nav>
-        <li><a href="#section1">Página Inicial</a></li>
+        <li><a href="#secao1">Página Inicial</a></li>
         <li><a href="#quem-somos">Quem Somos</a></li>
-        <li><a href="#teachers">Professores</a></li>
+        <li><a href="#professores">Professores</a></li>
         <li><a href="#atividades">Atividades</a></li>
         <li><a href="./pag-nossa-historia/nossa-historia.html" target="_blank">Nossa História</a></li>
-        <li><a href="#">Fotos</a></li>
-        <li><a href="#">Fale conosco</a></li> 
+        <li><a href="#fotos">Fotos</a></li>
+        <li><a href="#fale-conosco">Fale conosco</a></li> 
       </nav>
     </header>
     <main>
-      <section class="section1" id="section1">
+      <section class="secao1" id="secao1">
         <div>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis numquam pariatur quisquam dolorum facere ipsa ipsum libero eveniet illum quae optio officiis, similique laboriosam veritatis repellat quidem. Asperiores, voluptates eveniet.</p>
         </div>
@@ -38,38 +39,60 @@
         </div>
       </section>
       <section class="quem-somos" id="quem-somos">
-        <h1>QUEM SOMOS</h1>
+        <h2>QUEM SOMOS</h2>
         <aside>
           <p>SEJA UM COLABORADOR</p>
         </aside>
       </section>
-      <section class="teachers" id="teachers">
-        <h1>
+      <section class="professores" id="professores">
+        <h2>
           PROFESSORES
-        </h1>
+        </h2>
       </section>
       <section class="atividades" id="atividades">
-        <h1>
+        <h2>
           Atividades
-        </h1>
+        </h2>
       </section>
-      <section>
-        <h1>
+      <section class="fotos" id="fotos">
+        <h2>
           FOTOS
-        </h1>
+        </h2>
       </section>
-      <section>
+      <section class="fale-conosco" id="fale-conosco">
+        <h2>Fale conosco</h2>
         <form>
-          <h1>FALE CONOSCO</h1>
-          <textarea name="" id="" cols="30" rows="10"></textarea>
-          <input type="submit" value="Enviar">
+          <div>
+            <label for="imsg"></label>
+            <textarea name="mensagem" id="imsg" placeholder="Escreva sua mensagem"></textarea>
+          </div>
+          <div>
+            <input type="submit" value="Enviar" style="margin-top:1rem;padding:.7rem;border:none;border-radius:.5rem;background-color:rgb(84, 172, 84);color:white; cursor: pointer;">
+          </div>
         </form>
       </section>
     </main>
     <footer>
-      <h1>LOGO</h1>
-      <p>ENDEREÇO</p>
-      <p>DESENVOLVIDO POR <a href="#">JANSEN MUNIZ</a></p>
+      <div class="container-logo-endereco">
+        <div>
+          <h2>LOGO</h2>
+        </div>
+        <div class="container-endereco">
+          <span class="material-symbols-outlined">
+            location_on
+            </span>
+            <p>• Sete de Setembro </p>
+            <p>• Centro</p> 
+            <p>• Santa Cruz do Piauí</p> 
+            <p>• 64545-000</p>
+          <p></p>
+          <p></p>
+          <p></p>
+        </div>
+      </div>
+      <div class="container-desenvolvido-por">
+        <p>DESENVOLVIDO POR <a href="#">JANSEN MUNIZ</a></p>
+      </div>
     </footer>
   </div>
 </body>

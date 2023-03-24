@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
 :root{
   --color1: #B6F2BC;
   --color2: #62D96D;
@@ -34,14 +36,18 @@ header{
   box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.267);
 }
 
-header .header-text-container{
+header .container-texto-cabecalho{
   color: white;
   font-size: 1.5rem;
   text-shadow: 1px 1px 5px black;
 }
 
-.header-text-container div{
+.container-texto-cabecalho div{
   padding: 1rem;
+}
+
+h1, h2, p{
+  font-family: 'Ubuntu', sans-serif;
 }
 
 nav{
@@ -62,13 +68,14 @@ nav{
 
 nav li a{
   text-decoration: none;
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: bold;
-  color: var(--color1);
+  font-family: 'Ubuntu', sans-serif;
+  color: var(--color5);
 }
 
 a:hover{
-  color: var(--color5);
+  color: var(--color1);
 }
 
 section{
@@ -80,11 +87,11 @@ section > div > p{
   margin: 13rem;
 }
 
-.section1{
+.secao1{
   background-color: var(--color3);
 }
 
-.section1 div{
+.secao1 div{
   padding-top: 10rem;
 }
 
@@ -93,7 +100,7 @@ section > div > p{
   background-color: var(--color5);
 }
 
-.quem-somos h1{
+.quem-somos h2{
   margin-left: 2rem;
 }
 
@@ -106,16 +113,81 @@ section > div > p{
   justify-content: center;
 }
 
-.teachers{
-  display: flex;
+.professores{
   justify-content: center;
   background-color: var(--color3);
   height: 50rem;
 }
 
 .atividades{
-  display: flex;
   justify-content: center;
   background-color: var(--color5);
   height: 50rem;
+}
+
+.fotos{
+  justify-content: center;
+  background-color: var(--color3);
+  height: 50rem;
+}
+
+.fale-conosco{
+  background-color: var(--color5);
+  height: 50rem;
+  flex-direction: column;
+}
+
+.fale-conosco h2{
+  padding-top: 18rem;
+  margin-bottom: .5rem;
+  color: white;
+}
+
+.fale-conosco > form textarea{
+  width: 30rem;
+  height: 10rem;
+  padding: .5rem;
+}
+
+footer{
+  background-color: var(--color4);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer .container-logo-endereco{
+  width: 50rem;
+  height: 30rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+footer .container-desenvolvido-por{
+  width: 100%;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer .container-endereco{
+  line-height: 2rem;
+  text-align: center;
+  font-size: 1.3rem;
+  color: var(--color1);
+}
+
+.container-endereco .material-symbols-outlined{
+  font-size: 3rem;
+}
+
+footer > .container-desenvolvido-por > p{
+  color: white;
+}
+
+footer > .container-desenvolvido-por > p > a{
+  text-decoration: none;
+  color: var(--color1);
 }

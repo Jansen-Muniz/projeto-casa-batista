@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+:root{
+  --color1: #B6F2BC;
+  --color2: #62D96D;
+  --color3: #4FB059;
+  --color4: #46994F;
+  --color5: #2E6634;
+}
+
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+.container{
+  background-color: var(--color1);
+  width: 100%;
+  height: 100vh;
+}
+
+footer{
+  background-color: var(--color4);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer .container-logo-endereco{
+  width: 50rem;
+  height: 30rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+footer .container-desenvolvido-por{
+  width: 100%;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer .container-endereco{
+  line-height: 2rem;
+  text-align: center;
+  font-size: 1.3rem;
+  color: var(--color1);
+}
